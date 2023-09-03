@@ -49,3 +49,27 @@ int main() {
     return 0;
 }
 
+/*another solution */
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char F1[100], S1[100];
+    char F2[100], S2[100];
+
+    // Read input for the first person
+    scanf("%s %s", F1, S1);
+
+    // Read input for the second person
+    scanf("%s %s", F2, S2);
+
+    // Compare the second names
+    if (strcmp(S1, S2) == 0) {
+        printf("ARE Brothers\n");
+    } else {
+        printf("NOT\n");
+    }
+
+    return 0;
+}
