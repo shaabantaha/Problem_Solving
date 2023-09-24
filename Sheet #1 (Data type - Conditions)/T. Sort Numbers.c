@@ -8,7 +8,7 @@ int main(void) {
 	int a,b,c ;
 	scanf_s("%i %i %i", &a,&b,&c);
 
-	if (a < b && a < c)
+	if (a <= b && a <= c)
 	{
 		printf("%i\n", a);
 		if (b < c)
@@ -23,7 +23,7 @@ int main(void) {
 		}
 	}
 
-	if(b < a && b < c)
+	if(b <= a && b <= c)
 	{
 		printf("%i\n", b);
 		if (a < c)
@@ -38,7 +38,7 @@ int main(void) {
 		}
 	}
 
-	if (c < a && c < b)
+	if (c <= a && c <= b)
 	{
 		printf("%i\n", c);
 		if (a < b)
